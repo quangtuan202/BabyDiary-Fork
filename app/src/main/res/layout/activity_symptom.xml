@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStartWithNavigation="0dp"
+                app:titleMarginStart="8dp" />
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/icon_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_start" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/icon_start"
+                            android:text="@string/time"
+                            android:textSize="15dp"
+                          />
+
+                        <TextView
+                            android:id="@+id/dueDateTextTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"
+                            android:layout_toLeftOf="@+id/timepickerTime"
+                            android:layout_toRightOf="@+id/time"
+                            android:gravity="center"
+                            android:text="11-04-2020" />
+
+                        <TextView
+                            android:id="@+id/timepickerTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"
+                            android:text="15:22"
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey_bg" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/icon_group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/ic_group" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/icon_group"
+                            android:text="@string/group"
+                            android:textSize="15dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                    <com.hopenlib.flextools.FlexRadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginTop="15dp"
+                        app:alignContent="space_between"
+                        app:flexWrap="wrap"
+                        app:justifyContent="space_between">
+
+                        <RadioButton
+                            android:id="@+id/breathing_problems"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/breathing_problems_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/coughing"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/coughing_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:id="@+id/decreased_appetite"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/decreased_appetite_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/diarrhea"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/diarrhea_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:id="@+id/constipation"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/constipation_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/fever"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/fever_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rash"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/rash_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/runny_nose"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/runny_nose_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/sneezing"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/sneezing_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/stuffy_nose"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/stuffy_nose_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:id="@+id/vomiting"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/vomiting_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/other_symptom"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rd_bg_group_symptom_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/others_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </com.hopenlib.flextools.FlexRadioGroup>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey_bg" />
+
+
+                    <TextView
+                        android:id="@+id/error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/redError"
+                        android:visibility="gone" />
+
+
+                    <include layout="@layout/note_section" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_Add_Symptom"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_add"
+
+                    android:backgroundTint="@color/cvSymptomRed"
+                    android:text="ADD"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

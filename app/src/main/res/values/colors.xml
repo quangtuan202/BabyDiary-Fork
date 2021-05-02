@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //theme color
+    <color name="colorPrimary">#F35877</color>
+    <color name="colorPrimaryDark">#E64F6D</color>
+    <color name="colorAccent">#F35877</color>
+
+    <color name="blue">#219CFA</color>
+    <color name="darkBlue">#1783D5</color>
+
+    <color name="purple">#7D84DB</color>
+    <color name="darkPurple">#656CC5</color>
+    <color name="lightpink">#FF9FC6</color>
+    <color name="pink">#F081A2</color>
+    <color name="darkPink">#E77697</color>
+
+    <color name="black">#000000</color>
+    <color name="green">#28CF98</color>
+    <color name="darkGreen">#27B586</color>
+
+    <color name="text_color">#707070</color>
+
+
+    //popular color
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="darkerGrey">#707070</color>
+    <color name="navigationGrey">#9B9B9B</color>
+    <color name="navigationDarkGrey">#5E5D5D</color>
+
+
+    <color name="lightGrey">#F4F4F4</color>
+    <color name="niceGrey">#B3B3B3</color>
+    <color name="darkGrey">#7C7F7F</color>
+    <color name="white">#ffff</color>
+    <color name="grey"> #A8A3A5 </color>
+    <color name="grey_bg">#DEE0E0</color>
+    //card view color
+    <color name="cvPink">#FC82BC</color>
+    <color name="cvRed">#D64A8B</color>
+    <color name="cvLtPurple">#D983E7</color>
+    <color name="cvDkPurple">#858BD3</color>
+    <color name="cvLtBlue">#64A4F8</color>
+    <color name="cvDkBlue">#0057C9</color>
+    <color name="cvGreen">#19B095</color>
+    <color name="cvYellow">#FFD36F</color>
+    <color name="cvSunYellow">#FFEB3B</color>
+    <color name="cvPlayOrange">#ECA64B</color>
+    <color name="cvMassagePurple">#7600FD</color>
+    <color name="cvDrinkGreen">#12A5BB</color>
+    <color name="cvCryingRed">#C05959</color>
+    <color name="cvVaccineRed">#900000</color>
+    <color name="cvTemperatureRed">#F25858</color>
+    <color name="cvMedRed">#FF0000</color>
+    <color name="cvDoctorRed">#D85656</color>
+    <color name="cvSymptomRed">#7A0000</color>
+    <color name="cvPottyBlue">#4394FF</color>
+    <color name="cvPumpBottle">#A947D4</color>
+
+    //chart color
+    <color name="chartOrange">#DF6000</color>
+    <color name="chartYellow">#FFB100</color>
+    <color name="chartGreen">#0CA807</color>
+    <color name="chartPumpltPurple">#F6BFFF</color>
+    <color name="chartFeedltPink">#FFB9DB</color>
+
+    // record color
+          <color name="redError"> #E74C3C</color>
+    //timeline candlestick chart color
+    <color name="lightGreyChart"> #D7DBDD</color>
+
+    //dark mode color
+
+    <color name="darkModeBg">#303030</color>
+    <color name="semiTransparentColor">#b0ffffff</color>
+
+    <color name="opacity20">#20000000</color>
+    <color name="opacity05">#05000000</color>
+    <color name="opacity80">#80000000</color>
+    <color name="opacity90">#00ffffff</color>
+    <color name="opacity30">#30000000</color>
+    <color name="opacityWhite90">#00ffffff</color>
+
+
+</resources>

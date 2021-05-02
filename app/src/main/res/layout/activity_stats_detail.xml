@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    tools:context=".StatsDetailActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_feed"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_feed_selector"
+                    android:button="@null"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rd_pump"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_pump_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_formula"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_formula_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_pumpbottle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_pumpbottle_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_food"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_food_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_diaper"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_diaper_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_bath"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_bath_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_sleep"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_sleep_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_tummy"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_tummy_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_sunbathe"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_sunbathe_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_play"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_play_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_massage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_massage_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_drink"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_drink_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_crying"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_crying_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_vaccination"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_vaccination_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_temperature"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_temperature_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_med"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_med_selector"
+                    android:button="@null" />
+                <RadioButton
+                    android:id="@+id/rd_doctorvisit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_doctorvisit_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_symptom"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_symptom_selector"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rd_potty"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/radio_ic_potty_selector"
+                    android:button="@null" />
+
+
+            </RadioGroup>
+
+        </androidx.cardview.widget.CardView>
+
+    </HorizontalScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_growthList"
+        android:icon="@drawable/ic_growth_list"
+        android:title="@string/title_growthList" />
+
+    <item
+        android:id="@+id/navigation_weight"
+        android:icon="@drawable/ic_weight"
+        android:title="@string/title_weight" />
+
+    <item
+        android:id="@+id/navigation_length"
+        android:icon="@drawable/ic_length"
+        android:title="@string/title_length" />
+
+    <item
+        android:id="@+id/navigation_head"
+        android:icon="@drawable/ic_head"
+        android:title="@string/title_head" />
+</menu>

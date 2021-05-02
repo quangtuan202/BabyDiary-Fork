@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CustromNotificationActivity">
+
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cvPink"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/edit_notification"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/text_dialog">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/icon_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+        />
+
+        <TextView
+            android:id="@+id/text_activities_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon_activities"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/switch_repaet"
+            android:text="@string/repeat"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <Switch
+            android:id="@+id/switch_repaet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout_dialog"
+        android:layout_marginTop="25dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/icon_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_start" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/icon_start"
+            android:text="@string/time"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/timepicker_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="3dp"
+            android:text="15:22"
+
+            />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout_date"
+            android:layout_below="@+id/relativelayout_time"
+            android:layout_marginTop="25dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/icon_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/icon_date"
+                android:text="@string/date"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/datepicker_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="3dp"
+                android:text="12-04-2020"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_repeatin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayout_date"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+
+            >
+
+            <ImageView
+                android:id="@+id/icon_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_repeat" />
+
+            <TextView
+                android:id="@+id/text_repeatin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/icon_repeat"
+                android:text="@string/repeat_in"
+                android:textStyle="bold" />
+
+            <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+                android:id="@+id/snpd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/text_repeatin"
+                app:snp_buttonIconDown="@drawable/ic_down"
+                app:snp_buttonIconUp="@drawable/ic_up"
+                app:snp_maxValue="31"
+                app:snp_minValue="1"
+                app:snp_orientation="vertical"
+                app:snp_scrollEnabled="true"
+                app:snp_stepSize="1"
+                app:snp_value="0"
+                app:snp_valueMarginEnd="5dp"
+                app:snp_valueMarginStart="5dp"
+                app:snp_value_text_size="15dp" />
+
+            <TextView
+                android:id="@+id/text_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/snpd"
+                android:text="d"
+                android:textSize="15dp" />
+
+
+            <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+                android:id="@+id/snph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/text_d"
+                app:snp_buttonIconDown="@drawable/ic_down"
+                app:snp_buttonIconUp="@drawable/ic_up"
+                app:snp_maxValue="23"
+                app:snp_minValue="0"
+                app:snp_orientation="vertical"
+                app:snp_scrollEnabled="true"
+                app:snp_stepSize="1"
+                app:snp_value="0"
+                app:snp_valueMarginEnd="5dp"
+                app:snp_valueMarginStart="5dp"
+                app:snp_value_text_size="15dp" />
+
+            <TextView
+                android:id="@+id/text_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/snph"
+                android:text="h"
+                android:textSize="15dp" />
+
+
+            <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+                android:id="@+id/snpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/text_h"
+                app:snp_buttonIconDown="@drawable/ic_down"
+                app:snp_buttonIconUp="@drawable/ic_up"
+                app:snp_maxValue="59"
+                app:snp_minValue="0"
+                app:snp_orientation="vertical"
+                app:snp_scrollEnabled="true"
+                app:snp_stepSize="1"
+                app:snp_value="0"
+                app:snp_valueMarginEnd="5dp"
+                app:snp_valueMarginStart="5dp"
+                app:snp_value_text_size="15dp" />
+
+            <TextView
+                android:id="@+id/text_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/snpm"
+                android:text="m"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

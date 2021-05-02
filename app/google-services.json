@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "300958238589",
+    "firebase_url": "https://babydiary-767e2-default-rtdb.firebaseio.com",
+    "project_id": "babydiary-767e2",
+    "storage_bucket": "babydiary-767e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300958238589:android:974df949ccd003696f6e14",
+        "android_client_info": {
+          "package_name": "com.riagon.babydiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300958238589-dga4d9sgpah85ta3qghm45po7saumu26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.riagon.babydiary",
+            "certificate_hash": "21ff536f5dfd12e72792619acdd086ced43eeaa4"
+          }
+        },
+        {
+          "client_id": "300958238589-p7fi6tuhk9pv1ujbv6efhrvtfmcf4331.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.riagon.babydiary",
+            "certificate_hash": "ef18847247704914f70a6abce37eb21d9dbd7c5c"
+          }
+        },
+        {
+          "client_id": "300958238589-7dq123poec25urtvvltjtnn4j0cdic9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZEG3uoTGaJYvVwerzj4p4lRAq4ykJwJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300958238589-7dq123poec25urtvvltjtnn4j0cdic9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

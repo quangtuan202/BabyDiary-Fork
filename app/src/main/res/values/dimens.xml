@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="imageLayoutWidth">30dp</dimen>
+    <dimen name="imageLayoutHeight">30dp</dimen>
+    <dimen name="addLayoutWidth">20dp</dimen>
+    <dimen name="addLayoutHeight">20dp</dimen>
+    <dimen name="txtLayoutHeight">20dp</dimen>
+    <dimen name="cvIconMarginLeft">5dp</dimen>
+    <dimen name="cvTxtMarginLeft">10dp</dimen>
+
+    <dimen name="tabIconLayoutWidth">80dp</dimen>
+    <dimen name="tabIconLayoutHeight">80dp</dimen>
+    <dimen name="tabIconMarginTop">15dp</dimen>
+
+</resources>

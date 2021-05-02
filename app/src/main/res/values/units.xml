@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_weight_entries">
+        <item>Centimeters and Kilograms</item>
+        <item>Feet/Inch and Pounds</item>
+    </string-array>
+    <string-array name="pref_weight_values">
+        <item>cm-kg</item>
+        <item>in-lb</item>
+    </string-array>
+</resources>

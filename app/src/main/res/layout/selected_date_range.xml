@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_txtSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_selector"
+            android:padding="10dp"
+            android:text="@string/select_range_date" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+
+            android:layout_toRightOf="@+id/text_selected"
+            android:background="@drawable/bg_button_selector"
+            android:drawableLeft="@drawable/ic_right"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+
+            android:layout_toLeftOf="@+id/text_selected"
+            android:background="@drawable/bg_button_selector"
+            android:drawableLeft="@drawable/ic_left"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/icon_date"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/left"
+            android:background="@drawable/bg_button_selector"
+            android:drawableLeft="@drawable/ic_date"
+            android:paddingStart="11.5dp"
+            android:paddingEnd="11.5dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/total_activities_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

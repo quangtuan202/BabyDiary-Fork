@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGrowthRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/icon_start"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_start" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/icon_start"
+                    android:text="@string/time"
+
+                 />
+
+                <TextView
+                    android:id="@+id/dueDateTextTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_toLeftOf="@+id/timepickerTime"
+                    android:layout_toRightOf="@+id/time"
+                    android:gravity="center"
+                    android:text="11-04-2020" />
+
+                <TextView
+                    android:id="@+id/timepickerTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:text="15:22"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout_time"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/icon_weight_growth"
+                    android:layout_width="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_weight" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/icon_weight_growth"
+                    android:text="@string/title_weight"
+                     />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_weight"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/bg_button_add_growth"
+                    android:drawableLeft="@drawable/ic_add_black"
+                    android:paddingStart="5.5dp"
+                    android:paddingEnd="5.5dp"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_minus_weight"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_toLeftOf="@+id/edt_weight"
+                        android:background="@drawable/button_addminus_selector"
+                        android:drawableLeft="@drawable/ic_minus"
+                        android:paddingStart="3.5dp"
+                        android:paddingEnd="3.5dp" />
+
+                    <EditText
+                        android:id="@+id/edt_weight"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/weight_unit"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:selectAllOnFocus="true"
+                        android:text="0"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/weight_unit"
+                        android:layout_width="23dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_toLeftOf="@+id/button_add_weight"
+                        android:gravity="center"
+                        android:text="kg"
+                        android:textSize="12dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_add_weight"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_toLeftOf="@+id/close_weight"
+                        android:background="@drawable/button_addminus_selector"
+                        android:drawableLeft="@drawable/ic_add"
+                        android:paddingStart="3.3dp"
+                        android:paddingEnd="3.3dp"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/close_weight"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/bg_button_add_growth"
+                        android:drawableLeft="@drawable/ic_close"
+                        android:paddingStart="7dp"
+                        android:paddingEnd="7dp"
+
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout_weight"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/icon_height_growth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_length" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/icon_height_growth"
+                    android:text="@string/height"
+                   />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_height"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/bg_button_add_growth"
+                    android:drawableLeft="@drawable/ic_add_black"
+                    android:paddingStart="5.5dp"
+                    android:paddingEnd="5.5dp"
+                    android:visibility="visible" />
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_minus_height"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_toLeftOf="@+id/edt_height"
+                        android:background="@drawable/button_addminus_selector"
+                        android:drawableLeft="@drawable/ic_minus"
+                        android:paddingStart="3.5dp"
+                        android:paddingEnd="3.5dp" />
+
+                    <EditText
+                        android:id="@+id/edt_height"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/height_unit"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:selectAllOnFocus="true"
+                        android:text="0"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/height_unit"
+                        android:layout_width="23dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_toLeftOf="@+id/button_add_height"
+                        android:gravity="center"
+                        android:text="cm"
+                        android:textSize="12dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_add_height"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_toLeftOf="@+id/close_height"
+                        android:background="@drawable/button_addminus_selector"
+                        android:drawableLeft="@drawable/ic_add"
+                        android:paddingStart="3.3dp"
+                        android:paddingEnd="3.3dp"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/close_height"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/bg_button_add_growth"
+                        android:drawableLeft="@drawable/ic_close"
+                        android:paddingStart="7dp"
+                        android:paddingEnd="7dp"
+
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout_height"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/icon_head_growth"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_head" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/icon_head_growth"
+                    android:text="@string/head_circumference"
+                   />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_head"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/bg_button_add_growth"
+                    android:drawableLeft="@drawable/ic_add_black"
+                    android:paddingStart="5.5dp"
+                    android:paddingEnd="5.5dp"
+                    android:visibility="visible" />
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_minus_head"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_toLeftOf="@+id/edt_head"
+                        android:background="@drawable/button_addminus_selector"
+                        android:drawableLeft="@drawable/ic_minus"
+                        android:paddingStart="3.5dp"
+                        android:paddingEnd="3.5dp" />
+
+                    <EditText
+                        android:id="@+id/edt_head"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/head_unit"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:selectAllOnFocus="true"
+                        android:text="0"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/head_unit"
+                        android:layout_width="23dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_toLeftOf="@+id/button_add_head"
+                        android:gravity="center"
+                        android:text="cm"
+                        android:textSize="12dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_add_head"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_toLeftOf="@+id/close_head"
+                        android:background="@drawable/button_addminus_selector"
+                        android:drawableLeft="@drawable/ic_add"
+                        android:paddingStart="3.3dp"
+                        android:paddingEnd="3.3dp"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/close_head"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/bg_button_add_growth"
+                        android:drawableLeft="@drawable/ic_close"
+                        android:paddingStart="7dp"
+                        android:paddingEnd="7dp"
+
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/note_img_section" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_Add_Growth"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_add"
+            android:text="ADD"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--tools:context=".AddGrowthRecordActivity">-->
+
+
+<!--<ScrollView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="fill_parent"-->
+<!--    android:fillViewport="true"-->
+<!--    android:scrollbars="none">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:contentInsetStartWithNavigation="0dp"-->
+<!--            app:titleMarginStart="8dp"-->
+<!--            />-->
+
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_below="@+id/toolbar"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linearLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/relativelayout_time"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    >-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/icon_start"-->
+<!--                        android:layout_width="22dp"-->
+<!--                        android:layout_height="22dp"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:src="@drawable/ic_start" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/time"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:layout_toRightOf="@+id/icon_start"-->
+<!--                        android:text="@string/time"-->
+
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/dueDateTextTime"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:layout_toLeftOf="@+id/timepickerTime"-->
+<!--                        android:layout_toRightOf="@+id/time"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="11-04-2020" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/timepickerTime"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:text="15:22"-->
+
+<!--                        />-->
+
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/relativelayout_weight"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/relativelayout_time"-->
+<!--                    android:layout_marginTop="20dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/icon_weight_growth"-->
+<!--                        android:layout_width="22dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:src="@drawable/ic_weight" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_toRightOf="@+id/icon_weight_growth"-->
+<!--                        android:text="@string/title_weight"-->
+<!--                        />-->
+
+<!--                    <androidx.appcompat.widget.AppCompatButton-->
+<!--                        android:id="@+id/add_weight"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="7dp"-->
+<!--                        android:background="@drawable/bg_button_add_growth"-->
+<!--                        android:drawableLeft="@drawable/ic_add_black"-->
+<!--                        android:paddingStart="5.5dp"-->
+<!--                        android:paddingEnd="5.5dp"-->
+<!--                        android:visibility="visible" />-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rl_weight"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:visibility="gone"-->
+<!--                        >-->
+
+
+<!--                        <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/button_minus_weight"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginTop="7dp"-->
+<!--                            android:layout_toLeftOf="@+id/edt_weight"-->
+<!--                            android:background="@drawable/button_addminus_selector"-->
+<!--                            android:drawableLeft="@drawable/ic_minus"-->
+<!--                            android:paddingStart="3.5dp"-->
+<!--                            android:paddingEnd="3.5dp" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/edt_weight"-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_toLeftOf="@+id/weight_unit"-->
+<!--                            android:background="@android:color/transparent"-->
+<!--                            android:gravity="center"-->
+<!--                            android:inputType="numberDecimal"-->
+<!--                            android:maxLength="5"-->
+<!--                            android:selectAllOnFocus="true"-->
+<!--                            android:text="0"-->
+<!--                            android:textSize="18dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/weight_unit"-->
+<!--                            android:layout_width="23dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+
+<!--                            android:layout_toLeftOf="@+id/button_add_weight"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="kg"-->
+<!--                            android:textSize="12dp" />-->
+
+<!--                        <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/button_add_weight"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginTop="7dp"-->
+<!--                            android:layout_toLeftOf="@+id/close_weight"-->
+<!--                            android:background="@drawable/button_addminus_selector"-->
+<!--                            android:drawableLeft="@drawable/ic_add"-->
+<!--                            android:paddingStart="3.3dp"-->
+<!--                            android:paddingEnd="3.3dp"-->
+
+<!--                            />-->
+
+<!--                        <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/close_weight"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginTop="7dp"-->
+<!--                            android:background="@drawable/bg_button_add_growth"-->
+<!--                            android:drawableLeft="@drawable/ic_close"-->
+<!--                            android:paddingStart="7dp"-->
+<!--                            android:paddingEnd="7dp"-->
+
+<!--                            />-->
+<!--                    </RelativeLayout>-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/relativelayout_height"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/relativelayout_weight"-->
+<!--                    android:layout_marginTop="20dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/icon_height_growth"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:src="@drawable/ic_length" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:layout_toRightOf="@+id/icon_height_growth"-->
+<!--                        android:text="@string/height"-->
+<!--                        />-->
+
+<!--                    <androidx.appcompat.widget.AppCompatButton-->
+<!--                        android:id="@+id/add_height"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="7dp"-->
+<!--                        android:background="@drawable/bg_button_add_growth"-->
+<!--                        android:drawableLeft="@drawable/ic_add_black"-->
+<!--                        android:paddingStart="5.5dp"-->
+<!--                        android:paddingEnd="5.5dp"-->
+<!--                        android:visibility="visible" />-->
+
+
+
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rl_height"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:visibility="gone"-->
+<!--                        >-->
+
+
+<!--                        <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/button_minus_height"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginTop="7dp"-->
+<!--                            android:layout_toLeftOf="@+id/edt_height"-->
+<!--                            android:background="@drawable/button_addminus_selector"-->
+<!--                            android:drawableLeft="@drawable/ic_minus"-->
+<!--                            android:paddingStart="3.5dp"-->
+<!--                            android:paddingEnd="3.5dp" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/edt_height"-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_toLeftOf="@+id/height_unit"-->
+<!--                            android:background="@android:color/transparent"-->
+<!--                            android:gravity="center"-->
+<!--                            android:inputType="numberDecimal"-->
+<!--                            android:maxLength="5"-->
+<!--                            android:selectAllOnFocus="true"-->
+<!--                            android:text="0"-->
+<!--                            android:textSize="18dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/height_unit"-->
+<!--                            android:layout_width="23dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+
+<!--                            android:layout_toLeftOf="@+id/button_add_height"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="cm"-->
+<!--                            android:textSize="12dp" />-->
+
+<!--                        <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/button_add_height"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginTop="7dp"-->
+<!--                            android:layout_toLeftOf="@+id/close_height"-->
+<!--                            android:background="@drawable/button_addminus_selector"-->
+<!--                            android:drawableLeft="@drawable/ic_add"-->
+<!--                            android:paddingStart="3.3dp"-->
+<!--                            android:paddingEnd="3.3dp"-->
+
+<!--                            />-->
+
+<!--                        <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/close_height"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginTop="7dp"-->
+<!--                            android:background="@drawable/bg_button_add_growth"-->
+<!--                            android:drawableLeft="@drawable/ic_close"-->
+<!--                            android:paddingStart="7dp"-->
+<!--                            android:paddingEnd="7dp"-->
+
+<!--                            />-->
+<!--                    </RelativeLayout>-->
+
+
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/relativelayout_head"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/relativelayout_height"-->
+<!--                    android:layout_marginTop="20dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/icon_head_growth"-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:src="@drawable/ic_head" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="7dp"-->
+<!--                        android:layout_toRightOf="@+id/icon_head_growth"-->
+<!--                        android:text="@string/head_circumference"-->
+<!--                        />-->
+
+<!--                    <androidx.appcompat.widget.AppCompatButton-->
+<!--                        android:id="@+id/add_head"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="7dp"-->
+<!--                        android:background="@drawable/bg_button_add_growth"-->
+<!--                        android:drawableLeft="@drawable/ic_add_black"-->
+<!--                        android:paddingStart="5.5dp"-->
+<!--                        android:paddingEnd="5.5dp"-->
+<!--                        android:visibility="visible" />-->
+
+
+
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rl_head"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:visibility="gone"-->
+<!--                        >-->
+
+
+<!--                        <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/button_minus_head"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginTop="7dp"-->
+<!--                            android:layout_toLeftOf="@+id/edt_head"-->
+<!--                            android:background="@drawable/button_addminus_selector"-->
+<!--                            android:drawableLeft="@drawable/ic_minus"-->
+<!--                            android:paddingStart="3.5dp"-->
+<!--                            android:paddingEnd="3.5dp" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/edt_head"-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_toLeftOf="@+id/head_unit"-->
+<!--                            android:background="@android:color/transparent"-->
+<!--                            android:gravity="center"-->
+<!--                            android:inputType="numberDecimal"-->
+<!--                            android:maxLength="5"-->
+<!--                            android:selectAllOnFocus="true"-->
+<!--                            android:text="0"-->
+<!--                            android:textSize="18dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/head_unit"-->
+<!--                            android:layout_width="23dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+
+<!--                            android:layout_toLeftOf="@+id/button_add_head"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="cm"-->
+<!--                            android:textSize="12dp" />-->
+
+<!--                        <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/button_add_head"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginTop="7dp"-->
+<!--                            android:layout_toLeftOf="@+id/close_head"-->
+<!--                            android:background="@drawable/button_addminus_selector"-->
+<!--                            android:drawableLeft="@drawable/ic_add"-->
+<!--                            android:paddingStart="3.3dp"-->
+<!--                            android:paddingEnd="3.3dp"-->
+
+<!--                            />-->
+
+<!--                        <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/close_head"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginTop="7dp"-->
+<!--                            android:background="@drawable/bg_button_add_growth"-->
+<!--                            android:drawableLeft="@drawable/ic_close"-->
+<!--                            android:paddingStart="7dp"-->
+<!--                            android:paddingEnd="7dp"-->
+
+<!--                            />-->
+<!--                    </RelativeLayout>-->
+
+<!--                </RelativeLayout>-->
+
+
+<!--                <include layout="@layout/note_img_section"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_width="match_parent" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recycler_view_photo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_below="@+id/linearLayout"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--            </androidx.recyclerview.widget.RecyclerView>-->
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/button_Add_Growth"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/button_add"-->
+<!--                android:text="ADD"-->
+<!--                android:textColor="@color/white" />-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--</ScrollView>-->
+<!--</RelativeLayout>-->

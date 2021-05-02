@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/notification_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/cvIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/cvName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/cvIcon" />
+
+        <Switch
+            android:id="@+id/isNotifySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_notification"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvName"
+        android:layout_marginLeft="30dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_default"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/notify_option_default" />
+
+        <RadioButton
+            android:id="@+id/radioButton_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/notify_option_custom" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

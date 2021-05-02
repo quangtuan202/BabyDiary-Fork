@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/top_growth_detail"
+        android:icon="@drawable/ic_top_growth"
+        android:title="@string/top_growth_detail_title"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/top_set_notification"
+        android:title="@string/set_notification_title"
+        android:icon="@drawable/ic_notifications_24px"
+        app:showAsAction="always"
+        />
+
+    <item
+    android:id="@+id/top_setting"
+    android:icon="@drawable/ic_settings_24px"
+    android:title="@string/top_setting_title"
+    app:showAsAction="always"
+    />
+
+
+</menu>

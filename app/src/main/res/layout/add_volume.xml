@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add  Volume"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/tx_title"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/navigationDarkGrey"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/icon_volumn"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:src="@drawable/ic_volume"-->
+<!--        android:layout_below="@+id/tx_title"-->
+<!--        android:layout_marginTop="50dp"/>-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tx_title"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/rl"
+    android:layout_marginTop="15dp"
+    >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_minus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="7dp"
+               android:background="@drawable/button_addminus_selector"
+        android:drawableLeft="@drawable/ic_minus"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/icon_volumn"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+              android:layout_centerVertical="true"
+        android:src="@drawable/ic_volume"
+               android:layout_toRightOf="@+id/button_minus"/>
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/icon_volumn"
+        android:background="@android:color/transparent"
+        android:inputType="number"
+        android:maxLength="5"
+        android:selectAllOnFocus="true"
+        android:text="120"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/volume_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/edt"
+        android:text="ml" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+      android:layout_toRightOf="@+id/volume_unit"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button_addminus_selector"
+        android:drawableLeft="@drawable/ic_add"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+
+        />
+
+</RelativeLayout>
+<TextView
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/add"
+    android:layout_below="@+id/rl"
+    android:text="Add"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="15dp"
+    android:padding="15dp"
+    android:gravity="center"
+    android:layout_alignParentRight="true"
+    android:textColor="@color/navigationDarkGrey"
+    android:textStyle="bold"
+    android:textSize="18dp"/>
+
+</RelativeLayout>

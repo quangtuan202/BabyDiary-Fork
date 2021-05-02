@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/custom_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:text="@string/custom_period"
+            android:textFontWeight="@integer/default_maxValue"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tx_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/colorPrimary"
+
+            />
+    </LinearLayout>
+</ScrollView>
+
+    <!-- private void DurationPickerDialog() {
+            LayoutInflater inflater = getLayoutInflater();
+            View alertLayout = inflater.inflate(R.layout.list_date, null);
+            AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
+            tx_cancle = (TextView) alertLayout.findViewById(R.id.tx_cancle);
+            tx_january = (TextView) alertLayout.findViewById(R.id.tx_january);
+            tx_february = (TextView) alertLayout.findViewById(R.id.tx_february);
+            tx_march = (TextView) alertLayout.findViewById(R.id.tx_march);
+            tx_april = (TextView) alertLayout.findViewById(R.id.tx_april);
+            tx_may = (TextView) alertLayout.findViewById(R.id.tx_may);
+            tx_june = (TextView) alertLayout.findViewById(R.id.tx_june);
+            tx_july = (TextView) alertLayout.findViewById(R.id.tx_july);
+            tx_august = (TextView) alertLayout.findViewById(R.id.tx_august);
+            tx_september = (TextView) alertLayout.findViewById(R.id.tx_september);
+            tx_october = (TextView) alertLayout.findViewById(R.id.tx_october);
+            tx_november = (TextView) alertLayout.findViewById(R.id.tx_november);
+            tx_december = (TextView) alertLayout.findViewById(R.id.tx_december);
+            alert.setView(alertLayout);
+            alert.setCancelable(false);
+
+            final AlertDialog dialog = alert.create();
+
+            //  settingHelper.setTextColorDialog(getContext(), tx_cancle, currentUser.getUserTheme());
+
+            tx_january.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "january", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+
+                }
+            });
+
+
+            tx_february.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "february", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+
+                }
+            });
+
+            tx_march.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "march", Toast.LENGTH_SHORT).show();
+
+                    dialog.dismiss();
+
+                }
+            });
+
+            tx_april.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "april", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+
+                }
+            });
+
+            tx_may.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "may", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+
+                }
+            });
+
+            tx_june.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "june", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                }
+            });
+            tx_july.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "july", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                }
+            });
+            tx_august.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "august", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                }
+            });
+            tx_september.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "september", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                }
+            });
+            tx_october.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "october", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                }
+            });
+            tx_november.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "november", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                }
+            });
+            tx_december.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "december", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                }
+            });
+
+            tx_cancle.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    dialog.dismiss();
+                }
+            });
+
+            dialog.show();
+
+        }
+
+         public TextView tx_cancle;
+        public TextView tx_january, tx_february, tx_march, tx_april, tx_may, tx_june, tx_july, tx_august, tx_september, tx_october, tx_november, tx_december;
+
+
+
+    -->

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StatsSymptomFragment">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <include
+                android:id="@+id/rl_txtSelected"
+                layout="@layout/selected_date_range" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_txtSelected"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/symptom_name"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tx_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/group" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tx_group"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/breathing_problems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/breathing_problems_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/coughing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/breathing_problems"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/coughing_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/decreased_appetite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/coughing"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/decreased_appetite_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/diarrhea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/decreased_appetite"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/diarrhea_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/constipation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/diarrhea"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/constipation_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/fever"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/constipation"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/fever_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/rash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/fever"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/rash_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/runny_nose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/rash"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/runny_nose_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/sneezing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/runny_nose"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/sneezing_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/stuffy_nose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/sneezing"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/stuffy_nose_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/vomiting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/stuffy_nose"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/vomiting_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/other_symptom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/vomiting"
+                            android:background="@drawable/bg_group_food_seletor"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/others_title"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/stats_period_total"
+                        android:layout_width="130dp"
+                        android:layout_height="25dp"
+                        android:layout_marginHorizontal="23dp"
+                        android:background="@drawable/radio_bg_stats_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/period_total"
+                        android:textColor="@color/color_text_chart_selector" />
+
+                    <RadioButton
+                        android:id="@+id/stats_day_average"
+                        android:layout_width="130dp"
+                        android:layout_height="25dp"
+                        android:layout_marginHorizontal="23dp"
+                        android:background="@drawable/radio_bg_stats_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/day_average"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_times"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="15dp">
+
+                        </com.github.mikephil.charting.charts.PieChart>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/no_of_times"
+                            android:textSize="12sp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="335dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/average_time_between_activities_title" />
+
+
+                </LinearLayout>
+
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp">
+
+                </com.github.mikephil.charting.charts.BarChart>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="535dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/stats_no_of_time"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/radio_bg_stats_selector"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="@string/no_of_times"
+                            android:textColor="@color/color_text_chart_selector" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.CombinedChart
+                    android:id="@+id/combineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp">
+
+                </com.github.mikephil.charting.charts.CombinedChart>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/setting_general_title"
+        android:layout="@layout/preference_category"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.ListPreference
+            android:defaultValue="English"
+            android:dialogTitle="@string/setting_language_title"
+            android:entries="@array/pref_language_entries"
+            android:entryValues="@array/pref_language_values"
+            android:key="LANGUAGE_KEY"
+            android:summary="%s"
+            android:title="@string/setting_language_title"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="DARK_MODE_KEY"
+            android:title="@string/setting_darkmode_title"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:key="backup_settings_key"
+            android:title="@string/backup_restore_title"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:key="export_excel_settings_key"
+            android:title="@string/setting_export_excel_title"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:key="version_settings_key"
+            android:summary="0.1"
+            android:title="@string/version_title"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory
+        android:title="@string/setting_unit_title"
+        android:layout="@layout/preference_category"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.ListPreference
+            android:defaultValue="c"
+            android:dialogTitle="@string/setting_temperature_title"
+            android:entries="@array/pref_temperature_entries"
+            android:entryValues="@array/pref_temperature_values"
+            android:key="TEMPERATURE_KEY"
+            android:summary="%s"
+            android:title="@string/setting_temperature_title"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="ml"
+            android:dialogTitle="@string/setting_volume_title"
+            android:entries="@array/pref_volume_entries"
+            android:entryValues="@array/pref_volume_values"
+            android:key="VOLUME_KEY"
+            android:summary="%s"
+            android:title="@string/setting_volume_title"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="cm-kg"
+            android:dialogTitle="@string/setting_weight_title"
+            android:entries="@array/pref_weight_entries"
+            android:entryValues="@array/pref_weight_values"
+            android:key="WHH_KEY"
+            android:summary="%s"
+            android:title="@string/setting_weight_title"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/setting_more_title"
+        android:layout="@layout/preference_category"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            android:key="remove_ads_settings_key"
+            android:title="@string/remove_ads_title"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:key="share_settings_key"
+            android:title="@string/share_title"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:key="other_apps_settings_key"
+            android:title="@string/other_apps_title"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/setting_other"
+        android:layout="@layout/preference_category"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            android:key="privacy_settings_key"
+            android:title="@string/setting_privacy"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:key="terms_settings_key"
+            android:title="@string/setting_terms"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:key="changelog_settings_key"
+            android:title="@string/changelog_title"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/log_date_section"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/opacity05"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/record_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="May 16, 2020" />
+
+        <TextView
+            android:id="@+id/record_baby_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/record_date"
+            android:text="Week 12" />
+
+    </RelativeLayout>
+
+</LinearLayout>

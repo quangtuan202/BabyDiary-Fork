@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_dialogpicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkGrey"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/set_start_time"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_dialogpicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+            android:id="@+id/snp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:snp_buttonIconDown="@drawable/ic_down"
+            app:snp_buttonIconUp="@drawable/ic_up"
+            app:snp_maxValue="23"
+            app:snp_minValue="0"
+            app:snp_orientation="vertical"
+            app:snp_scrollEnabled="true"
+            app:snp_stepSize="1"
+            app:snp_value="0"
+            app:snp_valueMarginEnd="10dp"
+            app:snp_valueMarginStart="10dp"
+            app:snp_value_text_size="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/h_name"
+            android:textSize="15dp" />
+
+        <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+            android:id="@+id/snp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:snp_buttonIconDown="@drawable/ic_down"
+            app:snp_buttonIconUp="@drawable/ic_up"
+            app:snp_maxValue="59"
+            app:snp_minValue="0"
+            app:snp_orientation="vertical"
+            app:snp_scrollEnabled="true"
+            app:snp_stepSize="1"
+            app:snp_value="0"
+            app:snp_valueMarginEnd="10dp"
+            app:snp_valueMarginStart="10dp"
+            app:snp_value_text_size="18dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/m_name"
+            android:textSize="15dp" />
+    </LinearLayout>
+</RelativeLayout>

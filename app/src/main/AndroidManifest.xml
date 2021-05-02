@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.riagon.babydiary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TodayLogActivity" />
+        <activity android:name=".PhotoDetailActivity" />
+        <activity
+            android:name=".UpgradeProActivity"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".BackupRestoreActivity" />
+        <activity android:name=".StatsDetailActivity" />
+        <activity android:name=".CustromNotificationActivity" />
+        <activity android:name=".BottlePumpedActivity"  android:theme="@style/NoActionBar" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".TemperatureActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".OtherActivity" />
+        <activity android:name=".DoctorVisitActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".VaccinationActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".MedicineActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".SymptomActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".CryingActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".PlayActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".MassageActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".SunbathTimeActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".TummyTimeActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".BathActivity"  android:theme="@style/NoActionBar" />
+        <activity android:name=".AddGrowthRecordActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".SleepActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".PottyActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".ActivitiesConfigActivity" />
+        <activity android:name=".DiaperActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".DrinkActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".FoodActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".FormulaActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".BreastfeedActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".PumpActivity" android:theme="@style/NoActionBar" />
+        <activity android:name=".ImagePickerActivity" />
+        <activity android:name=".GrowthDetail" />
+        <activity android:name=".SetNotificationActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".UserDetailActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".MainActivity"  android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- uCrop cropping activity -->
+        <receiver
+            android:name=".Notification.AlarmReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Notification.BreastFeedLeftReceiver">
+            <intent-filter>
+                <action android:name="com.tuan.timer.ACTION_PAUSEBREAST_FEED_LEFT" />
+                <action android:name="com.tuan.timer.ACTION_RESUMEBREAST_FEED_LEFT" />
+                <action android:name="com.tuan.timer.ACTION_STOPBREAST_FEED_LEFT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Notification.BreastFeedRightReceiver">
+            <intent-filter>
+                <action android:name="com.tuan.timer.ACTION_PAUSEBREAST_FEED_RIGHT" />
+                <action android:name="com.tuan.timer.ACTION_RESUMEBREAST_FEED_RIGHT" />
+                <action android:name="com.tuan.timer.ACTION_STOPBREAST_FEED_RIGHT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Notification.BreastPumpLeftReceiver">
+            <intent-filter>
+                <action android:name="com.tuan.timer.ACTION_PAUSEBREAST_PUMP_LEFT" />
+                <action android:name="com.tuan.timer.ACTION_RESUMEBREAST_PUMP_LEFT" />
+                <action android:name="com.tuan.timer.ACTION_STOPBREAST_PUMP_LEFT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Notification.BreastPumpRightReceiver">
+            <intent-filter>
+                <action android:name="com.tuan.timer.ACTION_PAUSEBREAST_PUMP_RIGHT" />
+                <action android:name="com.tuan.timer.ACTION_RESUMEBREAST_PUMP_RIGHT" />
+                <action android:name="com.tuan.timer.ACTION_STOPBREAST_PUMP_RIGHT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Notification.BreastPumpAllReceiver">
+            <intent-filter>
+                <action android:name="com.tuan.timer.ACTION_PAUSEBREAST_PUMP_ALL" />
+                <action android:name="com.tuan.timer.ACTION_RESUMEBREAST_PUMP_ALL" />
+                <action android:name="com.tuan.timer.ACTION_STOPBREAST_PUMP_ALL" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Notification.TummyReceiver">
+            <intent-filter>
+                <action android:name="com.tuan.timer.ACTION_PAUSETUMMY" />
+                <action android:name="com.tuan.timer.ACTION_RESUMETUMMY" />
+                <action android:name="com.tuan.timer.ACTION_STOPTUMMY" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Notification.SunBathReceiver">
+            <intent-filter>
+                <action android:name="com.tuan.timer.ACTION_PAUSESUN_BATH" />
+                <action android:name="com.tuan.timer.ACTION_RESUMESUN_BATH" />
+                <action android:name="com.tuan.timer.ACTION_STOPSUN_BATH" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Notification.SleepReceiver">
+            <intent-filter>
+                <action android:name="com.tuan.timer.ACTION_PAUSESLEEP" />
+                <action android:name="com.tuan.timer.ACTION_RESUMESLEEP" />
+                <action android:name="com.tuan.timer.ACTION_STOPSLEEP" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Utility.SleepingService"
+            android:stopWithTask="false" />
+        <service
+            android:name=".Utility.TummyTimeService"
+            android:stopWithTask="false" />
+        <service
+            android:name=".Utility.SunbathService"
+            android:stopWithTask="false" />
+        <service
+            android:name=".Utility.BreedService"
+            android:stopWithTask="false" />
+        <service
+            android:name=".Utility.PumpService"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/NoActionBar" /> <!-- cache directory file provider paths -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2305220711980257~4244073242" />
+    </application>
+
+</manifest>

@@ -1,0 +1,379 @@
+<resources>
+    <string name="app_name">Baby Diary</string>
+    <string name="swipe_to_start">Swipe To Start</string>
+    <string name="title_home">Home</string>
+    <string name="title_log">Log</string>
+    <string name="title_starts">Stats</string>
+    <string name="title_timeline">Timeline</string>
+
+    <!-- Dialog part-->
+
+    <string name="welcome_message">Welcome to Baby Diary</string>
+    <string name="welcome_message_2">CREATE YOUR BABY\'S PROFILE TO GET STARTED</string>
+    <string name="baby_name">Baby\'s Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="theme">Theme color</string>
+    <string name="premature">Premature?</string>
+    <string name="duedate">Due Date</string>
+    <string name="term_message">*Registration means that you agree to Baby  Diary\'s terms.</string>
+    <string name="term_message_2">Terms &amp; Conditions </string>
+    <string name="term_message_3">Privacy Policy</string>
+
+
+    <string name="title_growthList">Growth</string>
+    <string name="title_head">Head</string>
+    <string name="title_length">Length</string>
+    <string name="title_weight">Weight</string>
+    <string name="title_add_growth">Add Growth</string>
+    <string name="title_edit_growth">Edit Growth</string>
+
+
+    <string name="top_setting_title">Setting</string>
+    <string name="set_notification_title">Set Notification</string>
+    <string name="top_growth_detail_title">Growth detail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+
+    <!-- Activity part-->
+    <string name="breastfeed_name">Breastfeed</string>
+    <string name="breastpump_name">Breastpump</string>
+    <string name="formula_name">Formula</string>
+    <string name="pump_bottle_name">Pump Bottle</string>
+    <string name="food_name">Food</string>
+    <string name="diaper_name">Diaper</string>
+    <string name="bath_name">Bath</string>
+    <string name="sleep_name">Sleep</string>
+    <string name="tummy_time_name">Tummy Time</string>
+    <string name="sunbathe_name">Sunbathe</string>
+    <string name="play_name">Play</string>
+    <string name="massage_name">Massage</string>
+    <string name="drink_name">Drink</string>
+    <string name="crying_name">Crying</string>
+    <string name="vaccination_name">Vaccination</string>
+    <string name="temperature_name">Temperature</string>
+    <string name="medicine_name">Medicine</string>
+    <string name="doctor_visit_name">Doctor Visit</string>
+    <string name="symptom_name">Symptom</string>
+    <string name="potty_name">Potty</string>
+    <string name="other_activities_name">Add &amp; Move Activity </string>
+    <string name="no_record">No Record</string>
+
+    <!--  breastfeed , breastpump -->
+    <string name="title_account">Account</string>
+    <string name="add_baby">Add Baby</string>
+    <string name="edit_baby">Edit Baby</string>
+
+    <!--  breastfeed , breastpump -->
+    <string name="left">Left</string>
+    <string name="left_right">Left+Right</string>
+    <string name="right">Right</string>
+
+    <!--   -->
+    <string name="started">Started</string>
+    <string name="ended">Ended</string>
+    <string name="duration">Duration</string>
+    <string name="note">Note</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="attachments">Attachments</string>
+    <string name="add">ADD</string>
+
+
+    <!--    feed, pump, formula, drink-->
+    <string name="volume">Volume</string>
+
+
+    <!--food, Symptom, medicine, Vaccination, Doctor Visit, Temperature, Other Activity -->
+    <string name="time">Time</string>
+
+    <!-- diaper, potty   -->
+
+    <string name="wet">Wet</string>
+    <string name="dirty">Dirty</string>
+    <string name="mixed">Mixed</string>
+
+    <!-- bath-->
+
+    <string name="bath">Bath</string>
+    <string name="hair_wash">Hair wash</string>
+    <string name="both">Both</string>
+    <!-- chart -->
+    <string name="weight_chart">Weight</string>
+    <string name="length_chart">Length </string>
+    <string name="head_chart">Head</string>
+    <string name="height">Height</string>
+    <string name="head_circumference">Head Circumference</string>
+    <string name="age">Age</string>
+    <string name="percentile">Percentile</string>
+
+
+    <!--Unit-->
+    <string name="unit_kg">kg</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_c">c</string>
+    <string name="temperature">Temperature</string>
+
+
+    <!-- Setting part-->
+    <string name="setting_title">Setting</string>
+    <string name="setting_general_title">General</string>
+    <string name="setting_language_title">Languages</string>
+    <string name="setting_darkmode_title">Dark Mode</string>
+    <string name="setting_unit_title">Unit</string>
+    <string name="setting_weight_title">Weight, Height, Head Size</string>
+    <string name="setting_export_excel_title">Export data to Excel</string>
+
+    <string name="setting_temperature_title">Temperature</string>
+    <string name="setting_volume_title">Volume</string>
+
+    <string name="setting_time_reminder">Time</string>
+    <string name="setting_time_title">Time</string>
+    <string name="setting_manage_data_title">Manage Data</string>
+    <string name="setting_more_title">More</string>
+    <string name="choose_mail_client">Choose mail client</string>
+    <string name="backup_restore_title">Backup or Restore Data</string>
+    <string name="restore_title">Restore Data</string>
+    <string name="delete_all_data">Delete All Data</string>
+    <string name="version_title">Version</string>
+    <string name="remove_ads_title">Remove Ads</string>
+    <string name="other_apps_title">Check Out Our Other Apps</string>
+    <string name="send_feedback_title">Send Feedback</string>
+    <string name="send_feedback_summary">Please let us know what changes you would like to see</string>
+    <string name="share_title">Share Baby Diary with Your Friends</string>
+    <string name="changelog_title">Changelog</string>
+
+    <string name="write_review_title">Write a review</string>
+    <string name="write_review_summary">Please let us know what you think about this app</string>
+    <string name="setting_other">Others</string>
+    <string name="setting_privacy">Privacy Policy</string>
+    <string name="setting_terms">Terms and Conditions</string>
+
+    <!--food-->
+    <string name="group">Group</string>
+    <string name="fruits_title">Fruits</string>
+    <string name="meat_title">Meat</string>
+    <string name="dairy_title">Dairy</string>
+    <string name="snack_title">Snack</string>
+    <string name="vegetables_title">Vegetables</string>
+    <string name="fish_title">Fish</string>
+    <string name="grains_title">Grains</string>
+    <string name="others_title">Others</string>
+
+
+    <!--drink -->
+    <string name="water_title">Water</string>
+    <string name="milk_title">Milk</string>
+    <string name="juice_title">Juice</string>
+    <string name="fermentedmilk_title">Fermented Milk</string>
+
+
+    <!-- Symptom  -->
+    <string name="breathing_problems_title">Breathing Problems</string>
+    <string name="coughing_title">Coughing</string>
+    <string name="decreased_appetite_title">Decreased Appetite</string>
+    <string name="diarrhea_title">Diarrhea</string>
+    <string name="constipation_title">Constipation</string>
+    <string name="fever_title">Fever</string>
+    <string name="rash_title">Rash</string>
+    <string name="runny_nose_title">Runny Nose</string>
+    <string name="sneezing_title">Sneezing</string>
+    <string name="stuffy_nose_title">Stuffy Nose</string>
+    <string name="vomiting_title">Vomiting</string>
+
+
+    <!--  Medicine -->
+    <string name="antibiotics_title">Antibiotics</string>
+    <string name="fish_oil_title">Fish Oil</string>
+    <string name="ibuprofen_title">Ibuprofen</string>
+    <string name="multivitamins_title">Multivitamins</string>
+    <string name="paracetamol_title">Paracetamol</string>
+    <string name="vitamin_title">Vitamin D</string>
+
+    <!-- Vaccination -->
+
+    <string name="bcg_title">BCG</string>
+    <string name="dtap_title">DTap</string>
+    <string name="influenza_title">Influenza (Flu)</string>
+    <string name="hepA_title">HepA</string>
+    <string name="hepB_title">HepB</string>
+    <string name="hib_title">Hib</string>
+    <string name="mmr_title">MMR</string>
+    <string name="pcv_title">PCV (Pneumo)</string>
+    <string name="polio_title">Polio (IPV)</string>
+    <string name="rv_title">RV (Rotavirus)</string>
+    <string name="varicella_title">Varicella</string>
+
+
+    <string name="edit_notification">Edit Notification</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_in">Repeat in</string>
+    <string name="date">Date</string>
+
+
+    <!-- Dialog part-->
+    <string name="dialog_save">Save</string>
+    <string name="dialog_update">Update</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_edit_title">Edit Record</string>
+    <string name="dialog_add_title">Add Record</string>
+    <string name="dialog_set_start">Set as start date</string>
+    <string name="dialog_date">Date:</string>
+    <string name="dialog_time">Time:</string>
+
+
+    <!-- Backup-Restore -->
+    <string name="bk_ask_backup">Do you want to backup?</string>
+    <string name="bk_ask_restore">Do you want to restore the data?</string>
+    <string name="bk_ask_delete">Do you want to delete all?</string>
+    <string name="bk_er_find_forder">Backup folder not found. Please backup before restore!</string>
+    <string name="bk_er_create_forder">Unable to create directory. Please try again.</string>
+    <string name="bk_mes_er">Unable to backup database. Please try again.</string>
+    <string name="bk_mes_sucess">Backup Completed</string>
+    <string name="bk_er_file">Data not found. Please backup before restore!</string>
+    <string name="bk_import_sucess">Import Completed</string>
+    <string name="bk_import_er">Unable to import database. Please try again.</string>
+    <string name="bk_title">Backup</string>
+    <string name="import_title">Restore</string>
+    <string name="bkup_title">Backup Data</string>
+    <string name="autobkup_title">Automatic Backup</string>
+    <string name="bkupnow_title">Backup Now</string>
+    <string name="restore_del_shar_title">Restore, Delete or Share Data</string>
+
+    <!--fragment stats-->
+
+    <string name="period_total">Period Total</string>
+    <string name="day_average">Day Average</string>
+    <string name="average_time_between_activities_title"> Average Time Between Activities</string>
+    <string name="period">Period</string>
+    <string name="day">Day</string>
+    <string name="no_of_times">No. of Times</string>
+    <string name="times">time</string>
+    <string name="total">Total</string>
+    <string name="max_tem">Highest Temperature</string>
+    <string name="average_tem">Average Temperature</string>
+
+    <!-- Notification -->
+
+    <string name="notify_option_default">Every 3 hours after activity ends</string>
+    <string name="notify_option_custom">Custom schedule</string>
+    <string name="set_notification">Set Notification</string>
+    <string name="set_configuration">Configuration Activity</string>
+    <string name="notify_title">Have you added your baby record?</string>
+    <string name="notify_content">Do you want to add it now?</string>
+
+
+    <!-- upgrade to pro   -->
+    <string name="upgrade_content1">Unlock detailed statistics</string>
+    <string name="upgrade_content2">Compare multiple day\'s activity patterns </string>
+    <string name="upgrade_content3">Add attachments to any activity</string>
+    <string name="upgrade_content4">Sticky widget to manage activities anywhere</string>
+    <string name="upgrade_content5">Export data to printable files</string>
+    <string name="upgrade_content6">Remove Ads</string>
+    <string name="upgrade_content7">Sync all data with all caregivers</string>
+    <string name="upgrade_monthly">Monthly</string>
+    <string name="upgrade_yearly">Yearly</string>
+    <string name="upgrade_lifettime">Lifetime</string>
+    <string name="price_month">2 USD</string>
+    <string name="price_year">8 USD</string>
+    <string name="price_lifetime">15 USD</string>
+
+    <!-- Date,time picker   -->
+    <string name="select_range_date">Select Date Range</string>
+    <string name="set_start_time">Set Start Time</string>
+    <string name="y_name">y</string>
+    <string name="mo_name">mo</string>
+    <string name="d_name">d</string>
+    <string name="h_name">h</string>
+    <string name="m_name">m</string>
+    <string name="s_name">s</string>
+    <string name="week_name">Week</string>
+    <string name="year_name">years</string>
+    <string name="month_name">months</string>
+    <string name="day_name">days</string>
+    <string name="tweenty_fouth_hour">24h</string>
+    <string name="ago">ago</string>
+    <string name="tweenty_fouth_ago">>24 h ago</string>
+    <string name="total_activities">Total:</string>
+
+    <!-- Custom dialog   -->
+    <string name="custom_period">Custom Period</string>
+    <string name="seven_days">Last 7 days</string>
+    <string name="forthteen_days">Last 14 days</string>
+    <string name="thirty_days">Last 30 days</string>
+    <string name="this_month">This Month</string>
+    <string name="last_month">Last Month</string>
+    <string name="since_birth">Since Birth</string>
+
+    <!-- Form helper   -->
+    <string name="time_diff_eror">Time cannot be more than 24 h!!!</string>
+    <string name="time_diff_eror_2">Time is always non-negative!!!</string>
+
+    <!--Terms and Conditions-->
+    <string name="tx1_terms">By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Riagon.</string>
+    <string name="tx2_terms">Riagon is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.</string>
+    <string name="tx3_terms">The Perfect BMI app stores and processes personal data that you have provided to us, in order to provide our Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Perfect BMI app won’t work properly or at all.</string>
+    <string name="tx4_terms">You should be aware that there are certain things that Riagon will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Riagon cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.</string>
+    <string name="tx5_terms">If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.</string>
+    <string name="tx6_terms">Along the same lines, Riagon cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Riagon cannot accept responsibility.</string>
+    <string name="tx7_terms">With respect to Riagon’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Riagon accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.</string>
+    <string name="tx8_terms">At some point, we may wish to update the app. The app is currently available on Android – the requirements for system (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Riagon does not promise that it will always update the app so that it is relevant to you and/or works with the Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.</string>
+    <string name="tx_titleTerm2">Changes to This Terms and Conditions</string>
+    <string name="tx9_terms">We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on this page. These changes are effective immediately after they are posted on this page.</string>
+    <string name="tx_titleContact">Contact Us</string>
+    <string name="tx_contact">If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at support@riagon.com.</string>
+
+    <!-- Privacy Policy-->
+    <string name="tx_titlePrivacy2">Information Collection and Use</string>
+    <string name="tx_titlePrivacy3">Log Data</string>
+    <string name="tx_titlePrivacy4">Cookies</string>
+    <string name="tx_titlePrivacy5">Ads</string>
+    <string name="tx_titlePrivacy6">Analytics</string>
+    <string name="tx_titlePrivacy7">Service Providers</string>
+    <string name="tx_titlePrivacy8">Security</string>
+    <string name="tx_titlePrivacy9">Links to Other Sites</string>
+    <string name="tx_titlePrivacy10">Children’s Privacy</string>
+    <string name="tx_titlePrivacy11">Changes to This Privacy Policy</string>
+    <string name="tx1_privacy">Riagon built the "Perfect BMI" as an Ad Supported app. This SERVICE is provided by Riagon at no cost and is intended for use as is. This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service. If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy. The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at "Perfect BMI" unless otherwise defined in this Privacy Policy.</string>
+    <string name="tx2_privacy">For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to cookies, mobile identifiers. The information that we request is will be retained by us and used as described in this privacy policy. The app does use third party services that may collect information used to identify you. Link to privacy policy of third party service providers used by the app:</string>
+    <string name="tx3_privacy">Google Play Services</string>
+    <string name="tx4_privacy">AdMob</string>
+    <string name="tx5_privacy">We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</string>
+    <string name="tx6_privacy">Cookies are files with small amount of data that is commonly used as anonymous unique identifier of your mobile device. This Service uses cookies to deliver personalized ads and to allow for frequency capping, aggregated ad reporting, and to combat fraud and abuse. These are sent to your browser from the websites that you visit and are stored on your device\'s internal memory. This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services.</string>
+    <string name="tx7_privacy">This Service uses mobile ad identifiers to show personalized ads. We share such identifiers with advertising partners – ad technology providers. You can see the full list of ad technology providers here. By accepting this Privacy Policy you consent to the use of the mobile ad identifiers used in this Service. We hope you enjoy this free Service and your personalized ad experience. If you ever change your mind, you can withdraw your consent by purchasing this Service version without ads. This can be done in the application settings.</string>
+    <string name="tx8_privacy">We use third party analytics tool, Firebase Analytics, to help us measure traffic and usage trends for the service. Firebase Analytics collects information such as how often users visit our services, what pages they visit when they do so, and what other pages they use prior to coming to our services. We use the information get from Firebase Analytics only to improve our services.</string>
+    <string name="tx9_privacy">We may employ third-party companies and individuals due to the following reasons:</string>
+    <string name="tx10_privacy">To facilitate our Service;</string>
+    <string name="tx11_privacy">To provide the Service on our behalf;</string>
+    <string name="tx12_privacy">To perform Service-related services;</string>
+    <string name="tx13_privacy">To assist us in analyzing how our Service is used.</string>
+    <string name="tx14_privacy">We want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</string>
+    <string name="tx15_privacy">We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</string>
+    <string name="tx16_privacy">This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</string>
+    <string name="tx17_privacy">These Services do not address anyone under the age of 16. We do not knowingly collect personally identifiable information from children under 16. In the case we discover that a child under 16 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</string>
+    <string name="tx18_privacy">We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</string>
+
+    <!--account-->
+
+    <string name="sign_in">Sign in to Google to keep your data safe and synchronized between devices.</string>
+    <string name="your_plan">Your Plan: Free</string>
+    <string name="upgrade_to_PRO">Upgrade to PRO Version</string>
+    <string name="pro_plan">Pro Plan: Yearly</string>
+    <string name="valid">Valid until: Aug 7, 2021</string>
+    <string name="signIn_gg">  Sign in with Google</string>
+    <string name="birth_day">Birth day:</string>
+    <string name="baby_detail">Baby\'s Detail</string>
+    <string name="sex_girl">Girl</string>
+    <string name="sex_boy">Boy</string>
+    <string name="caregiver">Caregiver</string>
+    <string name="email_caregive">Caregive\'email</string>
+    <string name="title_email">Enter caregiver\'s email to start sharing your baby\'s data.</string>
+    <string name="send_invitation">Send Invitation</string>
+    <string name="add_caregive">Add Caregive</string>
+
+
+</resources>
